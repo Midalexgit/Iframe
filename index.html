@@ -10,8 +10,12 @@
   <body>
 <iframe src="" width="100%" height="100%"></iframe>
 <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('src');
+
+
   const iframe = document.querySelector('iframe')
-  iframe.src = "exemplo.com"
+  iframe.src = myParam
 </script>
   </body>
 </html>
